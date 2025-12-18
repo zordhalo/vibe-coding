@@ -318,9 +318,9 @@ export default function HomePage() {
               </div>
               <div className="col-lg-6">
                 <div className="card bg-primary bg-opacity-10 border-primary">
-                  <div className="card-body">
+                  <div className="card-body pb-4">
                     <h5 className="card-title text-light">5 Onboarding Principles</h5>
-                    <ul className="list-unstyled text-light">
+                    <ul className="list-unstyled text-light mb-0">
                       <li className="mb-2"><span className="badge bg-primary text-light me-2">1</span> Invoke emotion—purchase decisions are emotional</li>
                       <li className="mb-2"><span className="badge bg-primary text-light me-2">2</span> Show strongest incentives—clear life improvement</li>
                       <li className="mb-2"><span className="badge bg-primary text-light me-2">3</span> Simplicity—easy purchase decision</li>
