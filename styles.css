@@ -484,5 +484,17 @@ footer {
     box-shadow: 0 15px 40px rgba(124, 58, 237, 0.4);
 }
 
+/* Marketing Section - UGC Results & Creative Best Practices boxes */
+.card.bg-success .card-body .list-unstyled li,
+.card.bg-success .card-body .list-unstyled li strong,
+.card.bg-primary .card-body .list-unstyled li {
+    color: #FFFFFF;
+}
+
+.card.bg-success .card-body .card-title,
+.card.bg-primary .card-body .card-title {
+    color: #FFFFFF;
+}
+
 
 
