@@ -496,5 +496,10 @@ footer {
     color: #FFFFFF;
 }
 
+.card.border-primary .card-body p.fw-bold,
+.card.border-primary .card-body p.text-muted {
+    color: #FFFFFF !important;
+}
+
 
 
