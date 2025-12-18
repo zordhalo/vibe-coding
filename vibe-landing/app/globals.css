@@ -497,9 +497,77 @@ footer {
     color: #FFFFFF;
 }
 
-.card.border-primary .card-body p.fw-bold,
-.card.border-primary .card-body p.text-muted {
+/* Growth Flywheel - dark theme text on dark card */
+.card.border-primary:not(.bg-primary) {
+    background: var(--dark-surface);
+}
+
+.card.border-primary:not(.bg-primary) .card-body p.fw-bold {
+    color: var(--text-primary) !important;
+}
+
+.card.border-primary:not(.bg-primary) .card-body p.text-muted,
+.card.border-primary:not(.bg-primary) .card-body .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+/* Card headers - ensure visibility */
+.card-header .card-title,
+.card .card-header h5 {
+    color: var(--primary) !important;
+}
+
+/* All card titles should be visible */
+.card .card-title {
+    color: var(--primary) !important;
+    font-weight: 600;
+}
+
+/* Cards with bg-opacity classes - ensure proper backgrounds and override Bootstrap */
+.card.bg-success.bg-opacity-10,
+.card.border-success.bg-success {
+    background: rgba(16, 185, 129, 0.15) !important;
+    border-color: var(--success) !important;
+}
+
+.card.bg-primary.bg-opacity-10,
+.card.border-primary.bg-primary {
+    background: rgba(124, 58, 237, 0.15) !important;
+    border-color: var(--primary) !important;
+}
+
+/* Override for colored background cards - ensure text visibility */
+.card.bg-success .card-title,
+.card.bg-success.bg-opacity-10 .card-title,
+.card.bg-primary .card-title,
+.card.bg-primary.bg-opacity-10 .card-title {
     color: #FFFFFF !important;
+}
+
+.card.bg-success .list-unstyled li,
+.card.bg-success .list-unstyled strong,
+.card.bg-success.bg-opacity-10 .list-unstyled li,
+.card.bg-success.bg-opacity-10 .list-unstyled strong,
+.card.bg-primary .list-unstyled li,
+.card.bg-primary.bg-opacity-10 .list-unstyled li {
+    color: #FFFFFF !important;
+}
+
+/* Card text colors */
+.card .card-text,
+.card .card-body p,
+.card .card-body li {
+    color: var(--text-secondary);
+}
+
+.card .card-body strong {
+    color: var(--text-primary);
+}
+
+/* Section headings in marketing area */
+.section h3 {
+    color: var(--primary-light);
+    font-weight: 600;
 }
 
 /* Skip to content link */

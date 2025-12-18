@@ -101,8 +101,8 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="navbar navbar-expand-lg navbar-dark sticky-top" role="navigation" aria-label="Main navigation">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#home" aria-label="Vibe Coding Home">
-            <i className="fas fa-code" aria-hidden="true"></i> Vibe Coding
+          <a className="navbar-brand" href="#home" aria-label="Vibe Home">
+            <i className="fas fa-code" aria-hidden="true"></i> Vibe
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
             <span className="navbar-toggler-icon"></span>

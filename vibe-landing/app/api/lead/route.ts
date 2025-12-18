@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: fromEmail,
       to: email,
-      subject: 'Welcome to the Vibe Coding Playbook',
+      subject: 'Welcome to The Vibe Academy',
       html: `
         <!DOCTYPE html>
         <html>
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
         </head>
         <body style="font-family: 'Space Grotesk', Arial, sans-serif; background-color: #0F172A; color: #F1F5F9; padding: 40px 20px;">
           <div style="max-width: 600px; margin: 0 auto; background: #1E293B; border-radius: 12px; padding: 40px; border: 1px solid #334155;">
-            <h1 style="color: #A78BFA; margin-bottom: 20px;">Welcome to Vibe Coding! 🚀</h1>
+            <h1 style="color: #A78BFA; margin-bottom: 20px;">Welcome to The Vibe Academy</h1>
             <p style="color: #CBD5E1; line-height: 1.6; margin-bottom: 20px;">
               Thanks for signing up! You're now part of a community of builders who are creating revenue-generating apps in record time.
             </p>
@@ -51,7 +51,7 @@ export async function POST(request: Request) {
             </p>
             <hr style="border: none; border-top: 1px solid #334155; margin: 30px 0;">
             <p style="color: #94a3b8; font-size: 14px;">
-              You're receiving this because you signed up at vibecoding.dev
+              You're receiving this because you signed up at https://www.thevibe.academy/
             </p>
           </div>
         </body>
