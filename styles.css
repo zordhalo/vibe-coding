@@ -391,7 +391,7 @@ footer {
     background: var(--dark-surface);
     border-top: 1px solid var(--dark-border);
     padding: 60px 0 20px;
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 .footer-section h5 {
@@ -496,9 +496,162 @@ footer {
     color: #FFFFFF;
 }
 
+/* Growth Flywheel section text visibility */
 .card.border-primary .card-body p.fw-bold,
 .card.border-primary .card-body p.text-muted {
     color: #FFFFFF !important;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    z-index: 9999;
+    text-decoration: none;
+    border-radius: 0 0 8px 0;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: white;
+}
+
+/* Mobile menu smooth animation */
+.navbar-collapse {
+    transition: height 0.35s ease, opacity 0.25s ease;
+}
+
+.navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+}
+
+/* Cookie Consent Banner */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(30, 41, 59, 0.98);
+    border-top: 1px solid var(--dark-border);
+    padding: 20px;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cookie-consent.hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cookie-content p {
+    margin: 0;
+    color: var(--text-secondary);
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Email Signup Form */
+.signup-form .form-control {
+    background: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    color: var(--text-primary);
+    padding: 16px 20px;
+}
+
+.signup-form .form-control:focus {
+    background: var(--dark-surface);
+    border-color: var(--primary);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.25rem rgba(124, 58, 237, 0.25);
+}
+
+.signup-form .form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+.signup-form .btn-primary {
+    padding: 16px 32px;
+    min-width: 140px;
+}
+
+/* Loading/Skeleton animations */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--dark-surface) 25%,
+        var(--dark-border) 50%,
+        var(--dark-surface) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+}
+
+.skeleton-text {
+    height: 1em;
+    margin-bottom: 0.5em;
+}
+
+.skeleton-title {
+    height: 2em;
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+.skeleton-card {
+    height: 200px;
+}
+
+/* Focus styles for better accessibility */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Improved contrast for some elements */
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* Responsive adjustments for cookie banner */
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-content .d-flex {
+        justify-content: center;
+    }
 }
 
 
