@@ -186,6 +186,10 @@ code, pre {
     background: var(--dark-surface);
     border: 1px solid var(--dark-border);
     transition: all 0.3s ease;
+}
+
+/* Equal height cards for side-by-side layouts (one card per column) */
+.row > [class*="col-"] > .card:only-child {
     height: 100%;
 }
 
@@ -201,7 +205,7 @@ code, pre {
     padding: 20px;
 }
 
-.card-title {
+.card .card-title {
     color: var(--text-primary);
     font-weight: 600;
     margin: 0;
@@ -211,7 +215,7 @@ code, pre {
     padding: 20px;
 }
 
-.card-text {
+.card .card-text {
     color: var(--text-secondary);
     line-height: 1.6;
 }
@@ -479,4 +483,6 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(124, 58, 237, 0.4);
 }
+
+
 
