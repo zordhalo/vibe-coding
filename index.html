@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibe Coding Framework - Build $20K/Month Apps in 14 Days</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn Connor Burd's complete framework for rapid app development using AI. Build revenue-generating apps in 14 days with modern design principles and data-driven growth strategies.">
+    <meta name="keywords" content="vibe coding, app development, AI coding, React Native, startup, mobile apps, subscription apps">
+    <meta name="author" content="Connor Burd">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibecoding.dev/">
+    <meta property="og:title" content="Vibe Coding Framework - Build $20K/Month Apps in 14 Days">
+    <meta property="og:description" content="Learn Connor Burd's complete framework for rapid app development using AI. Build revenue-generating apps in 14 days.">
+    <meta property="og:image" content="https://vibecoding.dev/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vibecoding.dev/">
+    <meta name="twitter:title" content="Vibe Coding Framework - Build $20K/Month Apps in 14 Days">
+    <meta name="twitter:description" content="Learn Connor Burd's complete framework for rapid app development using AI.">
+    <meta name="twitter:image" content="https://vibecoding.dev/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#framework" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" role="navigation" aria-label="Main navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home">
-                <i class="fas fa-code"></i> Vibe Coding
+            <a class="navbar-brand" href="#home" aria-label="Vibe Coding Home">
+                <i class="fas fa-code" aria-hidden="true"></i> Vibe Coding
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,11 +66,11 @@
                     <h1>Build $20K/Month Apps in 14 Days</h1>
                     <p>Learn Connor Burd's complete framework for rapid app development using AI, modern design principles, and data-driven growth strategies.</p>
                     <div class="d-flex gap-3 flex-wrap">
-                        <button class="btn btn-primary btn-lg" onclick="document.getElementById('framework').scrollIntoView({behavior: 'smooth'})">
-                            <i class="fas fa-rocket"></i> Get Started
+                        <button class="btn btn-primary btn-lg" onclick="document.getElementById('framework').scrollIntoView({behavior: 'smooth'})" aria-label="Get started with the Vibe Coding framework">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> Get Started
                         </button>
-                        <button class="btn btn-outline-primary btn-lg" onclick="document.getElementById('process').scrollIntoView({behavior: 'smooth'})">
-                            <i class="fas fa-book"></i> Learn More
+                        <button class="btn btn-outline-primary btn-lg" onclick="document.getElementById('process').scrollIntoView({behavior: 'smooth'})" aria-label="Learn more about the build process">
+                            <i class="fas fa-book" aria-hidden="true"></i> Learn More
                         </button>
                     </div>
                 </div>
@@ -201,6 +228,16 @@
                         <div class="step-title">Test & Iterate</div>
                         <div class="step-description">
                             Ship to real users. Track conversions, retention, revenue with Mixpanel + RevenueCat. Iterate based on data, not gut feeling.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-4">
+                    <div class="process-step">
+                        <div class="step-number">7</div>
+                        <div class="step-title">Deploy & Scale</div>
+                        <div class="step-description">
+                            Launch paid marketing campaigns. Optimize CAC vs LTV ratios. Scale winning ads, kill losers fast. Reinvest profits into growth.
                         </div>
                     </div>
                 </div>
@@ -495,7 +532,7 @@ before implementing the payment flow"</code>
                                     </div>
                                     <div class="col-auto">
                                         <div class="mb-3">
-                                            <i class="fas fa-trending-up fa-2x" style="color: var(--secondary);"></i>
+                                            <i class="fas fa-arrow-trend-up fa-2x" style="color: var(--secondary);" aria-hidden="true"></i>
                                         </div>
                                         <p class="fw-bold">Organic<br>Performance Data</p>
                                     </div>
@@ -819,6 +856,33 @@ before implementing the payment flow"</code>
         </div>
     </section>
 
+    <!-- Email Signup Section -->
+    <section class="section bg-dark" id="signup">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Ready to Build Your App?</h2>
+                    <p class="text-secondary mb-4">Get weekly tips on AI-powered development, marketing strategies, and app monetization.</p>
+                    <form id="signupForm" class="signup-form" onsubmit="handleSignup(event)">
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Email address" required>
+                            <button class="btn btn-primary" type="submit" id="submitBtn">
+                                <span class="btn-text">Subscribe</span>
+                                <span class="btn-loading d-none">
+                                    <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <p class="text-muted small">No spam. Unsubscribe anytime.</p>
+                    </form>
+                    <div id="successMessage" class="alert alert-success d-none mt-3" role="alert">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i> Thanks for subscribing! Check your inbox for confirmation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -866,8 +930,20 @@ before implementing the payment flow"</code>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <div class="scroll-to-top" id="scrollToTop">
-        <i class="fas fa-arrow-up"></i>
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+        <div class="cookie-content">
+            <p id="cookieDesc" class="mb-2"><strong id="cookieTitle">🍪 Cookie Notice</strong><br>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-primary btn-sm" onclick="acceptCookies()" aria-label="Accept cookies">Accept</button>
+                <button class="btn btn-outline-light btn-sm" onclick="declineCookies()" aria-label="Decline cookies">Decline</button>
+                <a href="privacy.html" class="btn btn-link btn-sm text-light" aria-label="View privacy policy">Privacy Policy</a>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -925,6 +1001,51 @@ before implementing the payment flow"</code>
                 }
             });
         });
+
+        // Cookie Consent
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').classList.add('hidden');
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieConsent').classList.add('hidden');
+        }
+
+        // Check if cookie consent was already given
+        if (localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieConsent').classList.add('hidden');
+        }
+
+        // Email Signup Handler
+        function handleSignup(event) {
+            event.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const btnText = btn.querySelector('.btn-text');
+            const btnLoading = btn.querySelector('.btn-loading');
+            const emailInput = document.getElementById('emailInput');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Show loading state
+            btnText.classList.add('d-none');
+            btnLoading.classList.remove('d-none');
+            btn.disabled = true;
+            
+            // Simulate API call (replace with actual endpoint)
+            setTimeout(() => {
+                btnText.classList.remove('d-none');
+                btnLoading.classList.add('d-none');
+                btn.disabled = false;
+                emailInput.value = '';
+                successMessage.classList.remove('d-none');
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('d-none');
+                }, 5000);
+            }, 1500);
+        }
     </script>
 </body>
 </html>
